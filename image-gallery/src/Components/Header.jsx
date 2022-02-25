@@ -3,10 +3,10 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-      <nav className="navbar navbar-dark bg-dark">
-        <div className="container-fluid">
+      <nav className="navbar navbar-dark bg-dark ">
+        <div className="container-fluid ">
           <span className="navbar-brand" href="#">
-            Gallery
+            Image Gallery: React <i className="fa-brands fa-react "></i>
           </span>
         </div>
       </nav>

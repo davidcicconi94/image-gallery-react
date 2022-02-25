@@ -1,9 +1,12 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { Card } from "./Card";
+import Form from "./Form";
+import Loading from "./Loading";
 
 export const Cards = () => {
   const [images, setImages] = useState([]);
   const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const request = useCallback(async () => {
     const key = "client_id=PxsLFf0XS4iIa9ZKjLjtYRzK9zj7lL1ARYkbQ4exGW4";
@@ -25,6 +28,7 @@ export const Cards = () => {
     } else {
       setImages(data);
     }
+    setLoading(false);
   }, [input]);
 
   useEffect(() => {
@@ -41,20 +45,10 @@ export const Cards = () => {
   return (
     <div>
       {/* Formulario */}
-      <form onSubmit={handleSubmit} className="form-group">
-        <label className="w-50">
-          <input
-            type="text"
-            name="inputText"
-            className="form-control mt-2  "
-            placeholder="Search..."
-          />
-        </label>
-        <button type="submit" className="btn btn-secondary m-1 p-2 ">
-          Search
-        </button>
-      </form>
-      <hr />
+      <Form handleSubmit={handleSubmit} />
+
+      {/* Loading */}
+      {loading && <Loading />}
 
       <div className="row">
         {images.map((img) => {
