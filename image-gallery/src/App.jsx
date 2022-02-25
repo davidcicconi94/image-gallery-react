@@ -1,11 +1,16 @@
 import React from "react";
 import Container from "./Components/Container";
+import Header from "./Components/Header";
 
 const App = () => {
   return (
-    <div className="text-center">
-      <h2>Hola mundo</h2>
-      <Container />
+    <div>
+      <div className="row">
+        <div className="col">
+          <Header />
+          <Container />
+        </div>
+      </div>
     </div>
   );
 };

@@ -42,14 +42,17 @@ export const Cards = () => {
     <div>
       {/* Formulario */}
       <form onSubmit={handleSubmit} className="form-group">
-        <label>
+        <label className="w-50">
           <input
             type="text"
             name="inputText"
-            className="form-control w-100"
+            className="form-control mt-2  "
             placeholder="Search..."
           />
         </label>
+        <button type="submit" className="btn btn-secondary m-1 p-2 ">
+          Search
+        </button>
       </form>
       <hr />
 

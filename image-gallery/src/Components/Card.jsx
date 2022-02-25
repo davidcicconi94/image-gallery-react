@@ -10,7 +10,7 @@ export const Card = ({ img }) => {
           width: "18rem",
         }}
       >
-        <img src={img} className="card-img-top" alt="..." />
+        <img src={img} className="card-img-top " alt="..." />
       </div>
     </div>
   );
