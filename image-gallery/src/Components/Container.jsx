@@ -3,7 +3,7 @@ import { Cards } from "./Cards";
 
 const Container = () => {
   return (
-    <div style={{ color: "red" }} className="container border my-3">
+    <div style={{ color: "#212529" }} className="container border my-3">
       <Cards />
     </div>
   );

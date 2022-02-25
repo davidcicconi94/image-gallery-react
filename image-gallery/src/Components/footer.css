@@ -1,0 +1,36 @@
+footer {
+  flex: 0 0 auto;
+  color: #fff4e3;
+  background-color: #212529;
+  margin-top: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  background: #212529;
+  color: white;
+}
+
+/* Facebook */
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
