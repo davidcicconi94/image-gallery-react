@@ -17,7 +17,7 @@ const Footer = () => {
               </div>
               <div className="col-md-4 text-md-right">
                 <a
-                  href="/https://github.com/davidcicconi94"
+                  href="https://github.com/davidcicconi94"
                   className="fa fa-github"
                 ></a>
                 <a
